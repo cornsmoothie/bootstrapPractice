@@ -43,7 +43,7 @@ h2 span{
     }
 
 .clicky{
-    margin-top:1000px; /*janky solution to fixed nav covering*/
+    margin-bottom:100px; /*janky solution to fixed-nav covering*/
     height:10px;
     background:#000;
     }

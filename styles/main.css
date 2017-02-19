@@ -1,6 +1,13 @@
 body{ 
     /*So the fixed navbar doesn't overlap on the body div*/
-    padding:50px;
+    padding-top:50px;
+}
+
+
+.container{
+    width:auto;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
 }
 
 
@@ -49,8 +56,39 @@ h2 span{
     }
 
 .horispan{
-        height:1000px;*/
+        height:2000px;
     }
+ 
+/*
+    .horispan .row{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #eduRow .img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+    }
+*/
+
+    /*TODO: Make background transparent*/
+    #eduRow{
+        margin-top:-100px;
+        padding:none;
+        background-image: url("../images/Temple-T.png");
+        background-size:100% 100%;//auto;
+        background-repeat: no-repeat;
+        //background-size:cover;
+    }
+    /*
+.edu1{
+    background-image: url("../images/TempleT");
+    }
+    */
 
 /*
     #edu{

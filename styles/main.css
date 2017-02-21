@@ -139,10 +139,28 @@ h2 span{
         margin:auto;
     }
 
+
     #expRow .col-lg-12 p{
         text-align:center;
-        //color:red;
+        color:black;
         font-size:2em; 
+        padding-bottom:10%;
+    }
+    
+
+    .col-lg-4 img{
+        display:block;
+        width:55%;
+        height:55%;
+        margin:auto;
+    }
+
+    #expRow .col-lg-4 p{
+        margin:5% 5% 5% 5%;
+        text-align:center;
+        color:black;
+        font-size:1.5em; 
+        padding-bottom:10%;
     }
 
     /*

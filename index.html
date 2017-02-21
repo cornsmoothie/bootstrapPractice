@@ -1,4 +1,6 @@
 <!--  AHHHH THIS IS A TEST TO SEE IF MY BRANCH IS WORKING! -->
+<!--  TODO make all cols have rows -->
+<!--  TODO make all images use class "img-responsive"-->
 
 <!--  http://www.htmlgoodies.com/tutorials/getting_started/article.php/3479511 -->
 <!DOCTYPE html>
@@ -58,7 +60,10 @@
         <div class= "page header">
             <h1 >Who am I?</h1>
         </div>
-        <div class="jumbotron"><!--enlarges font puts stuff in gray box with rounded corners--!>
+        <div class= "circle-div">
+             <img src= "images/Me.jpg" id="mePic"/>
+         </div>
+        <div class="jumbotron" id="intro"><!--enlarges font puts stuff in gray box with rounded corners--!>
         <p> My name is George Keenan and I'm a budding software developer. I'm a 3rd year computer science major at Temple University and a part time computer assistant at the Free Library of Philadelphia. Scroll down or click on the links above if you'd like to know more about me. If you'd like to keep up on the projects  I'll be doing throughout the coming months be sure to follow me on Github which I am just now starting to use much more frequently. This website is the first of many projects that I hope to push to Github within the coming months.</p>
         </div>
         <!--  
@@ -130,7 +135,9 @@
         <div class="container horispan" id="expRow">
             <div class=" row"> 
                 <div class="col-lg-12">
-                    <img src= "images/flpSquare.jpg" />
+                    <div class="circle-div">
+                        <img src= "images/flpSquare.jpg" />
+                    </div>
                 </div>
                 <div class="col-lg-12">
                     <p> I have been(and still am) working as a work study student at the Free Library of Philadelphia since 2013. I have been working at the West Oak Lane branch since my very first semester in college. Balancing work with school has helped me form a strong work ethic so that I will be prepared in the future for whatever position I may obtain. Working closely with the patrons of the library has helped develop my ability to deliver solutions based on client needs. Over the years I have taken on several different roles as I became more familiar with the library that you can read about further below: </p>
@@ -169,8 +176,15 @@
 
         <h2><span>Skills</span></h2>
         <div class="container horispan">
-            <div class=" jumbotron">
-                <p> Hello world! These are my skills. </p>
+            <div class="row" id="skillsRow">
+                <div class="col-lg-3">
+                    <div class="circle-div">
+                        <img src= "images/GitHub-Logo.png"/>
+                    </div>    
+                </div>
+                <div class="col-lg-3">
+                        <img src= "images/Android-Logo.jpg"/>
+                </div>
             </div>
         </div>
 

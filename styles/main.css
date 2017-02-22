@@ -11,28 +11,27 @@ body{
 }
 
 .circle-div{
+    display:block;
     position: relative;
-    width: 300px;
-    height: 350px;
     overflow: hidden;
     border-radius: 50%;
-    border:2px;
     margin-top:auto;
     margin-bottom:auto;
     margin-right:auto;
     margin-left:auto;
 }
 
-.circle-div .col-lg-3{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-top:auto;
-    margin-bottom:auto;
-    margin-right:auto;
-    margin-left:auto;
+
+.col-lg-3 .circle-div {
+    background-color:blue;
+    width: auto;
+    height: auto;
+}
+
+
+.col-lg-12 .circle-div{
+    width: 300px;
+    height: 350px;
 }
 /*
 .circle-div{
@@ -42,11 +41,8 @@ body{
 }
 */
 
-.circle-div img{
-    display:block;
+#mePic{
     margin-top:-15%;
-    margin-right:auto;
-    margin-left:auto;
     height:auto;
     width:100%;
 }

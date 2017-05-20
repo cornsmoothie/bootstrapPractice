@@ -10,6 +10,10 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- Material Design Bootstrap theme -->
+<!-- Gonna keep a local copy on AWS as well just in case-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.css" crossorigin="anonymous">
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -37,24 +41,44 @@
   </head>
   <body>
 
-    <div class= "container">
+    <div class= "container" id="main">
 
-        <div class=" container-fluid">
+
         <!--  you can just add on the properties that you want when using bootstrap--> 
         <!--  ie: you can do "navbar navbar-inverse" or you can do "navbar navbar-inverse navbar-fixed-top" -->
-        <nav class="navbar navbar-fixed-top"> 
+        <!--   <nav class="navbar navbar-fixed-top navbar-light bg-faded"> -->
+        <nav class="navbar navbar-dark navbar-fixed-top red">
+
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item active">
+                        <a href="#edu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#exp">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#hack">Hackathons</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                         
+                </ul>
+            <!-- 
             <div class=" container-fluid">
-                <!--  <a class= ""  href="#"></a> -->
                 <ul class= "nav nav-justified">
                     <li><a href="#edu">Education</a></li>
                     <li><a href="#exp">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#hack">Hackathons</a></li>
                     <li><a href="#contact">Contact Me</a></li>
-                </ul>
+                </ul> 
             </div>
+            -->
         </nav>
-        </div>
         
         <div class= "page header">
             <h1 >Who am I?</h1>
@@ -69,11 +93,6 @@
             <p> My name is George Keenan and I'm a budding software developer. I'm a 3rd year computer science major at Temple University and a part time computer assistant at the Free Library of Philadelphia. Scroll down or click on the links above if you'd like to know more about me. If you'd like to keep up on the projects  I'll be doing throughout the coming months be sure to follow me on Github which I am just now starting to use much more frequently. This website is the first of many projects that I hope to push to Github within the coming months.</p>
             </div>
         </div>
-        <!--  
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
-        </p>
-        -->
         <p> 
         <!--  should always make links buttons -->
         <!--  roles are for people using screen readers -->
@@ -94,10 +113,13 @@
         <h2><span>Education</span></h2>
         <div class="container horispan jumbotron" id=eduTron>
             <!--<img src="images/Temple-T.png"/>-->
-            <div class= "row" id=eduRow>
+            <!--<div class= "row" id=eduRow>-->
+            <div class= "row">
                 <div class="col-lg-12">
                     <h1>B.S in Computer Science</h1>
                 </div>
+            </div>
+            <div class=" row">
                 <div class="col-lg-3">
                     <!-- Place Holder  -->
                 </div>
@@ -110,19 +132,27 @@
                 <div class="col-lg-3">
                     <!-- Place Holder  -->
                 </div>
+            </div>
+            <div class=" row">
                 <div class="col-lg-12"id="eduSpace">
                     <!-- To make the next col not in the T  -->
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
                     <p> I am currently a junior at Temple University in pursuit of a Bachelor's of Science in Computer Science. I orignally enrolled in Temple as an undecided Liberal Arts major. I switched halfway through my second year at Temple and haven't looked back since! I truly enjoy learning all there is to learn in Computer Science and one of my favorite aspects of the major is that it is always evolving. I love the thrill of always having to keep up to date with the latest technologies and I think that it keeps you from getting bored with your job. I also love that there's so much to learn in this field and that I can always better myself. I realized that the best way to learn in this field is to just get out there and code which is what lead me to make this website. This website is a side project for me to learn the ins and outs of Web Development since I probably on't be taking a course on it before graduation. I'm also working with a group to create an upcoming app which should hopefully show on my GitHub soon! I like to attend hackathons to get out there and learn in the best environment I can get so I try to attend them whenever my schedule allows. If you want more details about the Hackathons I've attended feel free to scroll down or click the tab at the top to jump to that section.</p>
                 </div>
+            </div> <!--End of  row-->
+            <div class=" row">
                 <div class= "col-lg-2">
                     <!-- Place holder  -->
                 </div>
+            </div> <!--End of  row-->
+            <div class=" row">
                 <div class="col-lg-5">
                     <p> </p>
                 </div>
-            </div>
+            </div> <!--End of  row-->
         </div>
 
 
@@ -143,7 +173,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <p> I have been(and still am) working as a work study student at the Free Library of Philadelphia since 2013. I have been working at the West Oak Lane branch since my very first semester in college. Balancing work with school has helped me form a strong work ethic so that I will be prepared in the future for whatever position I may obtain. Working closely with the patrons of the library has helped develop my ability to deliver solutions based on client needs. Over the years I have taken on several different roles as I became more familiar with the library that you can read about further below: </p>
+                   <p> I have been(and still am) working as a work study student at the Free Library of Philadelphia since 2013. I have been working at the West Oak Lane branch since my very first semester in college. Balancing work with school has helped me form a strong work ethic so that I will be prepared in the future for whatever position I may obtain. Working closely with the patrons of the library has helped develop my ability to deliver solutions based on client needs. Over the years I have taken on several different roles as I became more familiar with the library that you can read about further below: </p>
                 </div>
                 <div class="col-lg-4">
                     <!--  change pic to computer lab -->
@@ -170,7 +200,6 @@
             </div>
         </div>
             
-        </div>
 
         <div class="container clicky">
             <a name="skills"
@@ -184,6 +213,9 @@
                     <div class="circle-div">
                         <img src= "images/GitHub-Logo.png"/>
                     </div>    
+                </div>
+                <div class="col-lg-3">
+                        <img src= "images/Android-Logo.jpg"/>
                 </div>
                 <div class="col-lg-3">
                         <img src= "images/Android-Logo.jpg"/>
